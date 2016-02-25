@@ -1,5 +1,5 @@
 # All-StudyImoocDemo
-### imooc-练习&个人的所思所想;
+### imooc-练习&&个人的所思所想;
 
 -  Imooc  是一个学习编程平台;</br>里面有前端开发、后端开发、移动开发、数据处理等课程学习;
 </br>我的ID：太阳神_SunOracle; &nbsp;&nbsp;&nbsp;欢迎加我为好友 :blush:
