@@ -62,7 +62,7 @@ CFDA1551 51B05B5D 2D3C8CFE FA8B4285
 B5CA66E3 A09DBD3A 3FE85BBD 69893DBD
 —— END LICENSE ——
 
-现在，恭喜你拥有了SubLime Text3了；现在你要下载Package Control，如何下载，请自行百度；下载完之后安装插件包（ConvertToUTF8）
+现在，恭喜你拥有了SubLime Text3了；现在你要下载Package Control，如何下载，请自行百度；此处奉上下载链接https://packagecontrol.io/installation下载完之后安装插件包（ConvertToUTF8）
 完成以上步骤，到了最关键的一步，就是改编码格式；以下奉上截图；点击就行；
 好的，在浏览器运行时再也不用担心中文乱码了；
 修改编码格式是我没有百度到，自己实验出来的，不喜勿喷；谢谢大家。
