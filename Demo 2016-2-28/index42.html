@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>计时器</title>
+<script type="text/javascript">
+   
+  var attime;
+  var colorHead,colorFoot;
+  function clock(){
+    var time=new Date();
+    var HH = time.getHours();
+    if(HH<10){HH="0"+HH};
+    var MM = time.getMinutes();
+    if(MM<10){MM="0"+MM};
+    var SS = time.getSeconds();
+    if(SS<10){SS="0"+SS};
+    var ww = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]
+    var nWeek = time.getDay();
+    attime= HH+":"+MM+":"+SS+" "+ww[nWeek];
+    document.getElementById("clock").value = attime;
+  }
+     var i= setInterval("clock()",100);
+     function kk(){
+         i=setInterval("clock()",100);
+     }
+</script>
+</head>
+<body>
+  <form>
+    <input type="text" id="clock" size="50" style="background:#000;color:#00ff00;width:100px"; />
+    <input type="button" value="暂停" onclick="clearInterval(i)" />
+    <input type="button" value="开始" onclick="kk()" />
+  </form>
+</body>
+</html>
