@@ -1,4 +1,9 @@
                                                    学期计划
+<<<<<<< HEAD
 课表：![课表](E:\Java 记事本\All-StudyImoocDemo\Demo 2016-3-1\image\课表.jpg)
  这个学期计划，
 
+=======
+这个学期计划，
+课表：![](/pic/课表.jpg)
+>>>>>>> origin/master
