@@ -8,4 +8,4 @@
 -  README.md   是一个阅读指导文件;
 -  README.mdown  是一个周目标与日目标文件;&nbsp;:+1:
 
-### 详细情况在imooc：http://www.imooc.com :smile:
+### 详细情况在imooc：http://www.imooc.com/article/5069 :smile:
