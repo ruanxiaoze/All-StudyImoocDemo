@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+body,div,h2,ul,li,img,p,h4,h5,button{padding: 0;margin: 0;}
+li{list-style: none;}
+    #box{width: 700px;height: 650px;box-shadow: 0 0 10px black;margin: 50px auto;padding: 10px;}    
+    #list1{width: 700px;height: 300px;border-top: 2px solid #650202;position: relative;}
+    #list1 h2{padding: 10px 10px 0 10px;}
+    #list1 li{width: 171px;border-right: 1px gray solid;height: 270px;display: inline-block;position: absolute;top:10px;left: 0;}
+    #list1 li:last-child{border: none;}
+    #list1 input{font-size: 14px;background-color: #C9C8C8;border: none;color: #650202;width:120px;overflow: hidden;padding: 2px;}
+    #list1 button{font-size: 16px;color: #650202;font-family: '黑体';border: 0;cursor: pointer;}
+    #list1 h5{font-size: 12px;color: gray;text-align: center;padding: 5px;}
+    #list1 img{width: 150px;height: 150px;margin-left: 10px;}
+    #list1 p,h4{font-size: 12px;color: gray;margin:5px}
+    #list1 span{color: red;font-weight: bolder;}
+    #tit{width:680px;height: 30px;}    
+    #tit h2{width:690px;background-color: #DADADA;font-size: 14px;height: 20px;line-height: 20px;padding: 5px;text-indent: 4em;color: #650202;}
+    #tit h2 span{margin-left: 150px;}
+    #list2 {width: 700px;position: relative;margin-top: 10px;}
+    #list2 li{height: 40px; width: 700px;background-color: #DADADA;line-height:  40px;margin-bottom: 5px;}
+    #list2 p{font-size: 12px;color: #650202;text-indent: 2em;display: inline-block;}
+    #list2 span{font-size: 12px;color: #650202;margin-left: 50px;}
+    #tol{width:680px;height: 40px;}
+    #tol strong{color: red;}
+</style>
+</head>
+<body>
+    <div id="box">
+        <h2>限购时间</h2>
+        <ul id="list1">
+            <li>
+                <input type="text" value="November 26 2013 22：16：28"><button>确定</button>
+                <h5>余剩00天00小时00分00秒</h5>
+                <img src="img/a.jpg" alt="">
+                <p>惯性是物体抵抗其运动状态被改变的性质。</p>
+                <h4>抢购价：<span>￥3288.00</span></h4>
+            </li>
+            <li>
+                <input type="text" value="November 26 2013 22：16：28"><button>确定</button>
+                <h5>余剩00天00小时00分00秒</h5>
+                <img src="img/b.jpg" alt="">
+                <p>直线向前，简单来说，依靠惯性来生活。</p>
+                <h4>抢购价：<span>￥98.00</span></h4>
+                 
+            </li>
+            <li>
+                <input type="text" value="November 26 2013 22：16：28"><button>确定</button>
+                <h5>余剩00天00小时00分00秒</h5>
+                <img src="img/c.jpg" alt="">
+                <p>就好比你顺着生活施加给你的这个力一直往前滚。</p>
+                <h4>抢购价：<span>￥8.00</span></h4>
+                 
+            </li>
+            <li>
+                <input type="text" value="November 26 2013 22：16：28"><button>确定</button>
+                <h5>余剩00天00小时00分00秒</h5>
+                <img src="img/d.jpg" alt="">
+                <p>但是你并不知道也并不能决定你最终能滚到哪里去。</p>
+                <h4>抢购价：<span>￥38.00</span></h4>                
+            </li>
+        </ul>
+        <div id="tit"><h2>商品名称<span>价钱</span></h2></div>
+        <ul id="list2" style="display: none;">
+            <li>
+                <p>PISN2016夏季新品 不规则系带款......</p>
+                <span>￥3288.00</span>
+            </li>
+            <li>
+                <p>PISN2016夏季新品 不规则系带款......</p>
+                <span>￥98.00</span>                
+            </li>
+            <li>
+                <p>PISN2016夏季新品 不规则系带款......</p>
+                <span>￥8.00</span>                
+            </li>
+            <li>
+                <p>PISN2016夏季新品 不规则系带款......</p>
+                <span>￥38.00</span>                
+            </li>
+        </ul>
+        <div id="tol">总价：<strong>0.00元</strong></div>
+    </div>
+<script>
+window.onload = function(){
+        var oBox = document.getElementById('box');
+        var oList1 = document.getElementById('list1');
+        var aLi1 = oList1.getElementsByTagName('li');//h5,input,button
+        for (var i = 0; i < aLi1.length; i++) {
+            aLi1[i].style.left = i*176+'px';
+        }
+        var oList2 = document.getElementById('list2');
+        var aLi2 = oList2.getElementsByTagName('li');
+        //span
+        var oTotal = document.getElementById('tol');
+        var oStrong = oTotal.getElementsByTagName('strong')[0];
+        function countDown(obj,iTime,fn){
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function(){
+            var iNow = new Date;            
+            var iNew = new Date(iTime);
+            t = Math.floor((iNew-iNow)/1000);
+            var str = '';
+            var iDate = addZero(Math.floor(t/86400));
+            var iHour = addZero(Math.floor(t%86400/3600));
+            var iMin = addZero(Math.floor(t%86400/3600/60));
+            var iSec = addZero(t%60);
+ 
+            if (t>0) {
+                str = '余剩'+iDate+'天'+iHour+'小时'+iMin+'分'+iSec+'秒';
+            }else{
+                clearInterval(obj.timer);
+                fn && fn();
+            }
+        },1000);        
+            function addZero(n){
+                return n<10?'0'+n:''+n;
+            }
+        }
+        function fn(li1){
+            var oText = li1.getElementsByTagName('input')[0];
+            var oBtn = li1.getElementsByTagName('button')[0];
+            var oH5 = li1.getElementsByTagName('h5')[0];
+        }
+}    
+</script>
+</body>
+</html>
