@@ -33,7 +33,17 @@
  每个完成十个网页；                                 |
  三个月完成时间：2016-4-18~2016-7~18               |                                         
                                                   |
-             
+ 
+十年目标：   工程师     设计师    <br />
+将下面的每个软件都做100个案例： <br />
+网页工程师：WEB  ASP  LAMP  JSP <br />
+UI: PS  AI  CDR  <br />
+三剑客：Dreamweaver  Flush  Firework <br />
+Offices: Word   Excel  PPT  <br />
+移动开发：Android  IOS <br />
+Adobe: AE Pr ID  <br />
+3D室内：CAD  3DMAX
+
 根据自己太懒的情况来看；决定制定一个残酷的计划；希望自己要坚持下去，对现在狠一点，就是对未来自己轻松一点(奋斗的年纪不要选择安逸；) <br />
 
 阶段计划目标： 会英语，可以正常交流； 会打太极； 会做网站、会做APP;     <br />
@@ -64,17 +74,6 @@
 全天在慕课网学习前端知识<br/>
 
 总结：学习最重要；  选择当一名程序员，就意味着自己没有退路，自己就必须不断学习和进步； <br />
-
-
-十年目标：   工程师     设计师    <br />
-将下面的每个软件都做100个案例： <br />
-网页工程师：WEB  ASP  LAMP  JSP <br />
-UI: PS  AI  CDR  <br />
-三剑客：Dreamweaver  Flush  Firework <br />
-Offices: Word   Excel  PPT  <br />
-移动开发：Android  IOS <br />
-Adobe: AE Pr ID  <br />
-3D室内：CAD  3DMAX
 
 
 天猫-前端开发工程师-杭州
